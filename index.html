@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker Project 2022</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- THE SECTION BELOW WILL BE WHERE THE USER SUBMITS ANY NEW TASK
+    - IMPORTANT THINGS TO NOTE IS THE TWO IDS 
+        - NEW_TASK_ADDED
+        - NEW_TASK_SUBMITTED 
+-->
+    <header>
+        <h1> Task Tracker - Organize Your Life </h1>
+        <form id="add_a_task_form">
+            <input type="text" id="new_task_added" placeholder="What task did you want to add?" />
+            <input type="submit" id="new_task_submitted" value="Add Task" />
+        </form>
+    </header>
+
+    <!-- THE SECTION BELOW WILL BE WHERE THE APP WILL DISPLAY THE TASKS 
+- IMPORTANT THINGS TO NOTE IS THE CLASSES 
+    - TASK_LIST_SECTION
+    - ALL_TASKS    - THIS ONE IS AN ID
+-->
+    <main>
+        <section class="task_list_section">
+            <h2> Tasks to Complete </h2>
+
+            <!--    The below has to do with building out the section where all the added tasks will live. 
+                    The read only attribute will make it so we can't erase everything. -->
+
+            <section id="tasks_container">
+
+                <!-- The below is basically the task template: ///////////////////////////////  -->
+                <!-- In the below we are creating the buttons to manipulate things with -->
+                
+                <!-- <div class="task">
+                    <div class="task_content">
+                        <input type="text" class="task_text" value="Default Task Text" readonly>
+                    </div>
+                    <div class="action_buttons">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+
+
+            </section>
+
+        </section>
+    </main>
+    <script src="./app.js"> </script>
+</body>
+
+</html>

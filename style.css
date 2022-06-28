@@ -1,0 +1,169 @@
+:root {
+
+    /* Here we are just creating shorthands for colors we will use */
+    --yellowBG: rgb(255, 252, 236);
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --grey: #6b7280;
+    --light: #EEE;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: var(--darkest);
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--grey);
+    margin-bottom: 2rem;
+}
+
+#add_a_task_form {
+    display: flex;
+}
+
+/* The below is just getting rid of the styling for our buttons and inputs */
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new_task_added {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    font-size: 2rem;
+    color: var(--light);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+}
+
+/* The below changes the color of the placehold in the new task */
+
+#new_task_added::placeholder {
+    color: var(--purple);
+}
+
+#new_task_submitted {
+
+    color: var(--pink);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+#new_task_submitted:hover {
+    opacity: .8;
+}
+
+#new_task_submitted:active {
+    opacity: .6;
+}
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task_list_section {
+    padding: 1rem;
+}
+
+.task_list_section h2 {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#tasks_container .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: var(--light);
+}
+
+#tasks_container .task .task_content {
+    flex: 1 1 0%;
+}
+
+#tasks_container .task .task_content .task_text {
+    display: block;
+    color: var(--light);
+    font-size: 1.1rem;
+    width: 100%;
+    transition: .4s;
+}
+
+/* The below happens if the element no longer has the read only attribute, this will be our indicator */
+#tasks_container .task .task_content .task_text:not(:read-only) {
+    color: var(--pink);
+
+}
+
+#tasks_container .task .action_buttons {
+display: flex;
+margin: 0 -0.5rem; 
+}
+
+#tasks_container .task .action_buttons button{
+cursor:pointer;
+margin: 0 0.5rem;
+font-size: 1.125rem;
+font-weight: 700;
+text-transform: uppercase;
+transition: .4s;
+
+}
+
+.task .action_buttons button:hover {
+    opacity: .8;
+}
+
+.task .action_buttons button:active {
+    opacity: .6;
+}
+
+.task .action_buttons .edit{
+color: var(--purple);
+}
+
+.task .action_buttons .delete{
+    color: crimson;
+    }
