@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--dark);
+    background-color: #465519;
     color: var(--darkest);
 }
 
@@ -37,9 +37,9 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: var(--grey);
+    color: #e9e4b6;
     margin-bottom: 2rem;
 }
 
@@ -58,11 +58,11 @@ button {
 
 #new_task_added {
     flex: 1 1 0%;
-    background-color: var(--darker);
+    background-color:#e9e4b6;
     font-size: 2rem;
-    color: var(--light);
+    color: #465519;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     margin-right: 1rem;
 
 }
@@ -70,12 +70,12 @@ button {
 /* The below changes the color of the placehold in the new task */
 
 #new_task_added::placeholder {
-    color: var(--purple);
+    color: #6c8327;
 }
 
 #new_task_submitted {
 
-    color: var(--pink);
+    color: #e9e4b6;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
@@ -103,8 +103,8 @@ main {
 }
 
 .task_list_section h2 {
-    color: var(--grey);
-    font-size: 1.5rem;
+    color: #e9e4b6;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 1rem;
 }
@@ -112,9 +112,9 @@ main {
 #tasks_container .task {
     display: flex;
     justify-content: space-between;
-    background-color: var(--darkest);
+    background-color: #e9e4b6;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
     margin-bottom: 1rem;
     color: var(--light);
 }
@@ -125,7 +125,7 @@ main {
 
 #tasks_container .task .task_content .task_text {
     display: block;
-    color: var(--light);
+    color: #465519;
     font-size: 1.1rem;
     width: 100%;
     transition: .4s;
@@ -133,7 +133,7 @@ main {
 
 /* The below happens if the element no longer has the read only attribute, this will be our indicator */
 #tasks_container .task .task_content .task_text:not(:read-only) {
-    color: var(--pink);
+    color: #ff9151;
 
 }
 
@@ -161,9 +161,9 @@ transition: .4s;
 }
 
 .task .action_buttons .edit{
-color: var(--purple);
+color: #4962a9;
 }
 
 .task .action_buttons .delete{
-    color: crimson;
+    color: rgb(255, 79, 30);
     }
